@@ -39,7 +39,8 @@ public class ChessBoardTest extends TestCase {
     @Test
     public void testIsLegalBoardPosition_False_X_equals_11_Y_equals_5() {
         boolean isValidPosition = testSubject.IsLegalBoardPosition(11, 5);
-        assertTrue(isValidPosition);
+        assertFalse(isValidPosition); //I modified this from assertTrue to assertFalse because
+                                        // (11,5) is an invalid position
     }
 
     @Test
